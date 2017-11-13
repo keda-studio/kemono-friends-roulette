@@ -11,9 +11,6 @@
 body {
   padding-top: 5rem;
 }
-h1 img {
-  width: 700px;
-}
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
@@ -22,6 +19,17 @@ button {
   cursor: pointer;
 }
 
+@media (max-width: 800px) {
+  body {
+    padding-top: 1.5rem;
+  }
+  legend {
+    font-size: 1.2rem;
+  }
+  .jumbotron h1 {
+    font-size: 2.0rem;
+  }
+}
 </style>
 </head>
 
@@ -31,7 +39,7 @@ button {
 <main role="main" class="container">
 
   <div class="starter-template">
-    <h1><img src="./title.png"></h1>
+    <h1><img src="./title.png" class="img-fluid"></h1>
 
     <form v-if="!result">
       <div class="form-group">
